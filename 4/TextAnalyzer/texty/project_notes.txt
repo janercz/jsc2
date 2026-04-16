@@ -1,0 +1,25 @@
+Project Notes
+
+Objective:
+Create a realistic set of human readable text files for parser tests.
+Support multiple lengths, writing styles, and mild formatting variance.
+
+Requirements:
+- At least nine .txt files in the folder.
+- Additional non-text file formats for integration tests.
+- Predictable content suitable for deterministic test outputs.
+
+Implementation details:
+Each file uses moderate paragraph length.
+Lists and headings are included to validate splitting logic.
+Common words appear repeatedly so frequency analysis is meaningful.
+
+Validation checklist:
+1. Tokenize all txt files and compare top words.
+2. Confirm all created files are readable without decoding errors.
+3. Verify extension counts in the target directory.
+4. Keep examples safe and suitable for school assignments.
+
+Future improvements:
+Add domain specific samples for legal, medical, and technical language.
+Include bilingual material to evaluate language detection behavior.

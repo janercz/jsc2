@@ -1,0 +1,21 @@
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+
+At vero eos et accusamus et iusto odio dignissimos ducimus.
+Et harum quidem rerum facilis est et expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit.
+
+Operational notes:
+- This file is used for longer text processing benchmarks.
+- It includes repeated sentence structures and list-like formatting.
+- It contains enough lines to test chunking logic and pagination.
+
+Data line examples:
+alpha beta gamma delta epsilon
+one two three four five six seven
+north south east west center
+
+Closing paragraph:
+Longer content makes it easier to verify both memory usage and throughput in text analysis tasks.
+Developers can compare results across revisions and quickly detect regressions.

@@ -1,0 +1,26 @@
+Daily Journal - Week 11
+
+Monday:
+Focused on reading documentation and summarizing key points.
+Prepared a small dataset for tokenization experiments.
+Reviewed consistency of file naming and metadata blocks.
+
+Tuesday:
+Wrote a short script to compare word counts between files.
+Validated output against expected values and fixed spacing issues.
+Added notes about mixed punctuation and edge-case tokens.
+
+Wednesday:
+Added new paragraphs, dates, and structured notes.
+Reviewed capitalization consistency and newline handling.
+Generated an intermediate snapshot for archive testing.
+
+Thursday:
+Collected feedback, adjusted naming, and finalized sample drafts.
+Generated an export report for future comparisons.
+Checked behavior with large lines and repeated terms.
+
+Friday:
+Ran final checks and archived temporary drafts.
+Prepared a short retrospective and list of next tasks.
+Documented what should be expanded in the next iteration.

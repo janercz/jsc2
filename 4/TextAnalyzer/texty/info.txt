@@ -1,0 +1,19 @@
+Project: Text input samples
+Created: 2026-03-13
+Updated: 2026-03-13 21:20
+
+This folder contains realistic sample files for parser and analyzer tests.
+The content is intentionally mixed: plain text, XML, CSV, JSON, markdown, and code snippets.
+
+Primary goals:
+- Provide human readable data for tokenization and indexing checks.
+- Include short and long lines to test splitting logic.
+- Keep examples deterministic for repeatable test runs.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Operational note:
+All files are safe, local, and intended only for development and classroom style exercises.

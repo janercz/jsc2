@@ -1,0 +1,6 @@
+id,topic,score,comment
+1,parsing,92,"Tokenizer handled mixed punctuation correctly"
+2,indexing,88,"Index build time stayed within expected bounds"
+3,export,95,"CSV and JSON output matched reference snapshots"
+4,validation,90,"All mandatory checks completed successfully"
+5,cleanup,86,"Temporary files removed and logs archived"

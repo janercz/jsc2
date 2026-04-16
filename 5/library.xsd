@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <!-- Root element -->
+  <xs:element name="Library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Genre" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Book" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Title"  type="xs:string"/>
+                    <xs:element name="Author" type="xs:string"/>
+                    <xs:element name="Year"   type="YearType"/>
+                    <xs:element name="ISBN"   type="IsbnType"/>
+                    <xs:element name="Rating" type="RatingType"/>
+                    <xs:element name="Pages"  type="PagesType"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required"/>
+            <xs:attribute name="count" type="xs:nonNegativeInteger" use="optional"/>
+            <xs:attribute name="avgRating" type="RatingType" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Custom simple types -->
+  <xs:simpleType name="YearType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1450"/>
+      <xs:maxInclusive value="2100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="RatingType">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="10"/>
+      <xs:fractionDigits value="2"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PagesType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="IsbnType">
+    <!-- Lenient pattern: ISBN-13 (starting 978/979, 13 digits) OR ISBN-10 (10 digits or last X) -->
+    <xs:restriction base="xs:string">
+      <xs:pattern value="((97[89])[0-9]{10})|([0-9]{9}[0-9X])"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

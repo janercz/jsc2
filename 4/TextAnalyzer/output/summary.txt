@@ -1,0 +1,4 @@
+﻿Analyzováno souborů: 9
+Celkem řádků: 199
+Celkem slov: 1230
+Nejčastější slovo: "and"

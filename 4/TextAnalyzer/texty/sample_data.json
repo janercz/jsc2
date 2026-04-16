@@ -1,0 +1,10 @@
+{
+  "dataset": "text-samples",
+  "created": "2026-03-13",
+  "owner": "local-workspace",
+  "items": [
+    {"id": 1, "type": "txt", "name": "lorem_alpha.txt"},
+    {"id": 2, "type": "txt", "name": "lorem_beta.txt"},
+    {"id": 3, "type": "xml", "name": "jablko.xml"}
+  ]
+}

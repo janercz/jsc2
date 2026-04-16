@@ -1,0 +1,22 @@
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Curabitur blandit tempus porttitor. Donec sed odio dui.
+Maecenas faucibus mollis interdum. Etiam porta sem malesuada magna mollis euismod.
+
+Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+Aenean lacinia bibendum nulla sed consectetur.
+Nullam id dolor id nibh ultricies vehicula ut id elit.
+Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+Testing paragraph A:
+The parser should read this file as plain UTF-8 compatible text.
+Word frequencies should include repeated terms like parser, text, and sample.
+Numbers such as 2024, 2025, and 2026 should be handled as tokens when needed.
+
+Testing paragraph B:
+Simple punctuation, commas, periods, and quotes are intentionally present.
+Short and long sentences are mixed to emulate realistic user notes.
+
+Testing paragraph C:
+This sentence is intentionally repetitive to help benchmark counting speed.
+This sentence is intentionally repetitive to help benchmark counting speed.
+This sentence is intentionally repetitive to help benchmark counting speed.

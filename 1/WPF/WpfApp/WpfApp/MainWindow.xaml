@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="480" Width="800">
+    <StackPanel Margin="20">
+
+        <TextBlock Text="Kód produktu:"/>
+        <TextBox Text="{Binding Code, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Název produktu:"/>
+        <TextBox Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Cena (CZK):"/>
+        <TextBox Text="{Binding Price, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+
+        <TextBlock Text="Množství:"/>
+        <TextBox Text="{Binding Qty, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10">
+            <Button Content="Přidat" Command="{Binding AddCommand}" Width="80" Margin="5"/>
+            <Button Content="Odebrat" Command="{Binding RemoveCommand}" Width="80" Margin="5"/>
+        </StackPanel>
+
+        <Separator Margin="0,10"/>
+
+        <TextBlock Text="Seznam produktů na skladě:" FontWeight="Bold"/>
+        <ListBox ItemsSource="{Binding Products}" Height="100" Margin="0,5"/>
+
+        <StackPanel Orientation="Horizontal" Margin="0,10">
+            <TextBlock Text="Celkový počet kusů na skladě: " FontWeight="Bold"/>
+            <TextBlock Text="{Binding TotalQuantity}" Foreground="Blue" FontWeight="Bold"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

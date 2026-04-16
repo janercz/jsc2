@@ -1,0 +1,49 @@
+# ==========================================
+# C# / .NET Core / Console App
+# ==========================================
+
+# Složky s výsledky sestavení (Build results)
+[Bb]in/
+[Oo]bj/
+
+# Logy a testy
+[Ll]og/
+[Ll]ogs/
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# ==========================================
+# Vývojová prostředí (IDE)
+# ==========================================
+
+# Visual Studio (od verze 2015 výše)
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ==========================================
+# Systémové soubory (WSL / Linux / macOS)
+# ==========================================
+
+# Záložní soubory textových editorů (Linux/WSL)
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ==========================================
+# Publikované výstupy
+# ==========================================
+*.publishxml
+[Pp]ublish/

@@ -1,0 +1,24 @@
+Technical Overview
+
+System context:
+The analyzer consumes text files and computes token statistics.
+Each file is normalized, split into tokens, and aggregated.
+
+Processing pipeline:
+1. Load file content with a fallback encoding strategy.
+2. Normalize whitespace and punctuation.
+3. Apply tokenization rules and count frequencies.
+4. Emit summary data to CSV and optional JSON output.
+
+Validation strategy:
+Use controlled sample texts with known repeated words.
+Compare measured counts to expected baselines.
+Check edge cases like empty lines and mixed symbols.
+
+Performance notes:
+Longer sample files improve confidence in parser reliability.
+They expose behavior under larger input and repeated patterns.
+Average throughput can be compared between revisions.
+
+Conclusion:
+This file provides structured, descriptive prose for integration tests.

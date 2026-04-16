@@ -1,0 +1,23 @@
+Travel Log
+
+Day 1:
+Departure at 06:20 from the central station.
+Weather was clear with mild wind from the west.
+Visited two museums and one local market.
+Recorded station names and route identifiers.
+
+Day 2:
+Early walk around the river district and old bridge.
+Collected photo metadata and location labels.
+Recorded short interviews with three local guides.
+Backed up notes to a shared folder in the evening.
+
+Day 3:
+Moved to a coastal town by regional train.
+Cataloged transportation times and ticket references.
+Completed notes and synced files before midnight.
+
+Summary:
+This log mixes narrative text with operational details.
+It is useful for testing extraction of dates, numbers, and entities.
+Longer sections improve parser stress tests on ordinary prose.

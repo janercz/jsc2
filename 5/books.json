@@ -1,0 +1,236 @@
+[
+  {
+    "title": "Duna",
+    "author": "Frank Herbert",
+    "year": 1965,
+    "isbn": "9780441172719",
+    "genre": "Sci-fi",
+    "rating": 9.1,
+    "pages": 688
+  },
+  {
+    "title": "Nadace",
+    "author": "Isaac Asimov",
+    "year": 1951,
+    "isbn": "9780808523086",
+    "genre": "Sci-fi",
+    "rating": 8.8,
+    "pages": 255
+  },
+  {
+    "title": "Neuromancer",
+    "author": "William Gibson",
+    "year": 1984,
+    "isbn": "9780441569595",
+    "genre": "Sci-fi",
+    "rating": 8.2,
+    "pages": 271
+  },
+  {
+    "title": "451 stupňů Fahrenheita",
+    "author": "Ray Bradbury",
+    "year": 1953,
+    "isbn": "9780345342966",
+    "genre": "Sci-fi",
+    "rating": 8.0,
+    "pages": 190
+  },
+  {
+    "title": "Hyperion",
+    "author": "Dan Simmons",
+    "year": 1989,
+    "isbn": "9780553283686",
+    "genre": "Sci-fi",
+    "rating": 8.9,
+    "pages": 482
+  },
+  {
+    "title": "Pán prstenů: Společenstvo prstenu",
+    "author": "J. R. R. Tolkien",
+    "year": 1954,
+    "isbn": "9780261102354",
+    "genre": "Fantasy",
+    "rating": 9.0,
+    "pages": 423
+  },
+  {
+    "title": "Pán prstenů: Dvě věže",
+    "author": "J. R. R. Tolkien",
+    "year": 1954,
+    "isbn": "9780261102361",
+    "genre": "Fantasy",
+    "rating": 8.9,
+    "pages": 352
+  },
+  {
+    "title": "Pán prstenů: Návrat krále",
+    "author": "J. R. R. Tolkien",
+    "year": 1955,
+    "isbn": "9780261102378",
+    "genre": "Fantasy",
+    "rating": 9.1,
+    "pages": 416
+  },
+  {
+    "title": "Hobit",
+    "author": "J. R. R. Tolkien",
+    "year": 1937,
+    "isbn": "9780345339683",
+    "genre": "Fantasy",
+    "rating": 8.4,
+    "pages": 310
+  },
+  {
+    "title": "Zpověď Sherlocka Holmese",
+    "author": "Arthur Conan Doyle",
+    "year": 1892,
+    "isbn": "9780241952900",
+    "genre": "Detektivka",
+    "rating": 8.1,
+    "pages": 320
+  },
+  {
+    "title": "Pes baskervillský",
+    "author": "Arthur Conan Doyle",
+    "year": 1902,
+    "isbn": "9780199536955",
+    "genre": "Detektivka",
+    "rating": 8.3,
+    "pages": 256
+  },
+  {
+    "title": "Vražda v Orient expresu",
+    "author": "Agatha Christie",
+    "year": 1934,
+    "isbn": "9780007119318",
+    "genre": "Detektivka",
+    "rating": 8.2,
+    "pages": 288
+  },
+  {
+    "title": "Deset malých černoušků",
+    "author": "Agatha Christie",
+    "year": 1939,
+    "isbn": "9780007136834",
+    "genre": "Detektivka",
+    "rating": 8.5,
+    "pages": 272
+  },
+  {
+    "title": "Sofie světa",
+    "author": "Jostein Gaarder",
+    "year": 1991,
+    "isbn": "9780374530716",
+    "genre": "Klasika",
+    "rating": 7.9,
+    "pages": 403
+  },
+  {
+    "title": "Sto roků samoty",
+    "author": "Gabriel García Márquez",
+    "year": 1967,
+    "isbn": "9780060883287",
+    "genre": "Klasika",
+    "rating": 8.7,
+    "pages": 417
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "isbn": "9780451524935",
+    "genre": "Klasika",
+    "rating": 9.0,
+    "pages": 328
+  },
+  {
+    "title": "Zločin a trest",
+    "author": "Fjodor Michajlovič Dostojevskij",
+    "year": 1866,
+    "isbn": "9780140449136",
+    "genre": "Klasika",
+    "rating": 8.6,
+    "pages": 671
+  },
+  {
+    "title": "Knihy džunglí",
+    "author": "Rudyard Kipling",
+    "year": 1894,
+    "isbn": "9780141325293",
+    "genre": "Dobrodružství",
+    "rating": 7.8,
+    "pages": 320
+  },
+  {
+    "title": "Cesta",
+    "author": "Cormac McCarthy",
+    "year": 2006,
+    "isbn": "9780307387899",
+    "genre": "Dobrodružství",
+    "rating": 8.0,
+    "pages": 287
+  },
+  {
+    "title": "Jádro věci",
+    "author": "Graham Greene",
+    "year": 1948,
+    "isbn": "9780142437988",
+    "genre": "Dobrodružství",
+    "rating": 7.7,
+    "pages": 272
+  },
+  {
+    "title": "Mlčení jehňátek",
+    "author": "Thomas Harris",
+    "year": 1988,
+    "isbn": "9780312924584",
+    "genre": "Thriller",
+    "rating": 8.1,
+    "pages": 367
+  },
+  {
+    "title": "Dívka, která si hrála s ohněm",
+    "author": "Stieg Larsson",
+    "year": 2006,
+    "isbn": "9780307454553",
+    "genre": "Thriller",
+    "rating": 8.0,
+    "pages": 569
+  },
+  {
+    "title": "Sníh padá na cedry",
+    "author": "David Guterson",
+    "year": 1994,
+    "isbn": "9780747519267",
+    "genre": "Thriller",
+    "rating": 7.6,
+    "pages": 368
+  },
+  {
+    "title": "Sapiens: Od zvířete k božskému jedinci",
+    "author": "Yuval Noah Harari",
+    "year": 2011,
+    "isbn": "9780099590088",
+    "genre": "Non-fiction",
+    "rating": 8.6,
+    "pages": 498
+  },
+  {
+    "title": "Černá labuť",
+    "author": "Nassim Nicholas Taleb",
+    "year": 2007,
+    "isbn": "9780812973815",
+    "genre": "Non-fiction",
+    "rating": 8.2,
+    "pages": 480
+  },
+  {
+    "title": "Tichá síla introvertů",
+    "author": "Susan Cain",
+    "year": 2012,
+    "isbn": "9780307352156",
+    "genre": "Non-fiction",
+    "rating": 8.0,
+    "pages": 352
+  }
+]

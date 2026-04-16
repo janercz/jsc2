@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog generated="2026-03-13">
+  <item id="A1">
+    <name>Red Apple</name>
+    <category>fruit</category>
+    <price currency="CZK">24.90</price>
+    <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+  </item>
+  <item id="A2">
+    <name>Steel Hammer</name>
+    <category>tool</category>
+    <price currency="CZK">219.00</price>
+    <description>Useful for workshop tasks and simple home repairs.</description>
+  </item>
+</catalog>
