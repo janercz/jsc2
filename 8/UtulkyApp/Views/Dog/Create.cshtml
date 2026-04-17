@@ -1,0 +1,34 @@
+@model Dog
+@{ ViewData["Title"] = "Přidat psa"; }
+
+<div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow">
+    <h1 class="text-3xl font-bold mb-6 text-gray-800">Přidat nového psa</h1>
+
+    <form asp-action="Create" method="post" class="space-y-4">
+        <input type="hidden" asp-for="ShelterId" value="@ViewBag.ShelterId" />
+
+        <div>
+            <label asp-for="Name" class="block text-gray-700 font-semibold mb-1">Jméno psa</label>
+            <input asp-for="Name" class="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+
+        <div>
+            <label asp-for="Breed" class="block text-gray-700 font-semibold mb-1">Rasa</label>
+            <input asp-for="Breed" class="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+
+        <div>
+            <label asp-for="Age" class="block text-gray-700 font-semibold mb-1">Věk (roky)</label>
+            <input asp-for="Age" type="number" class="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+
+        <div>
+            <label asp-for="Description" class="block text-gray-700 font-semibold mb-1">Popis povahy</label>
+            <textarea asp-for="Description" rows="4" class="w-full border px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded shadow transition">
+            Přidat
+        </button>
+    </form>
+</div>

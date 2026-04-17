@@ -1,0 +1,30 @@
+@model IEnumerable<UtulkyApp.Models.Dog>
+@{ ViewData["Title"] = "Výsledky hledání"; }
+
+<h1 class="text-3xl font-bold mb-6 text-gray-800">Výsledky hledání pro: "@ViewBag.Query"</h1>
+
+@if (!Model.Any())
+{
+    <p class="text-red-500 bg-red-100 p-4 rounded">Bohužel jsme žádného pejska s tímto jménem nenašli.</p>
+}
+else
+{
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        @foreach (var dog in Model)
+        {
+            <div class="bg-white p-4 border rounded shadow">
+                <h3 class="font-bold text-xl mb-1">@dog.Name</h3>
+                <p class="text-sm text-gray-600 mb-2">Rasa: @dog.Breed | Věk: @dog.Age</p>
+                <p class="mb-4">@dog.Description</p>
+                
+                @if(dog.Shelter != null)
+                {
+                    <div class="mt-4 p-3 bg-blue-50 border border-blue-200 rounded text-sm flex justify-between items-center">
+                        <span>Tento pejsek čeká v útulku <strong>@dog.Shelter.Name</strong></span>
+                        <a asp-controller="Shelter" asp-action="Detail" asp-route-id="@dog.ShelterId" class="text-blue-600 hover:underline font-bold">Přejít do útulku &rarr;</a>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+}

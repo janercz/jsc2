@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Shelter>
+@{ ViewData["Title"] = "Seznam útulků"; }
+
+<h1 class="text-4xl font-extrabold mb-8 text-center text-gray-800 uppercase tracking-wide">Dostupné útulky</h1>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    @foreach (var s in Model)
+    {
+        <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition border-l-4 border-red-600">
+            <h2 class="text-2xl font-bold text-gray-900 mb-2">@s.Name</h2>
+            <p class="text-gray-600 mb-4 font-medium">📍 @s.Location</p>
+            <a asp-controller="Shelter" asp-action="Detail" asp-route-id="@s.Id" 
+               class="inline-block bg-gray-100 text-red-700 hover:bg-red-700 hover:text-white px-4 py-2 rounded font-semibold transition">
+               Zobrazit detail &rarr;
+            </a>
+        </div>
+    }
+</div>
