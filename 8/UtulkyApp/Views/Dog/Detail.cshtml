@@ -1,23 +1,23 @@
 @model Dog
 @{ ViewData["Title"] = Model.Name; }
 
-<div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg border-2 border-gray-100">
-    <h1 class="text-5xl font-extrabold mb-2 text-gray-900">@Model.Name</h1>
-    <p class="text-xl text-red-600 font-bold mb-6 border-b pb-4">Útulek: @Model.Shelter?.Name</p>
+<div class="max-w-3xl mx-auto card-soft p-8 border border-brand-100">
+    <h1 class="page-title mb-2">@Model.Name</h1>
+    <p class="text-xl text-brand-700 font-bold mb-6 border-b border-brand-100 pb-4">Útulek: @Model.Shelter?.Name</p>
     
     <div class="grid grid-cols-2 gap-4 mb-6 text-lg">
-        <div class="bg-gray-50 p-3 rounded"><strong class="text-gray-800">Rasa:</strong> @Model.Breed</div>
-        <div class="bg-gray-50 p-3 rounded"><strong class="text-gray-800">Věk:</strong> @Model.Age let</div>
+        <div class="bg-brand-50 p-3 rounded-xl"><strong class="text-ink-900">Rasa:</strong> @Model.Breed</div>
+        <div class="bg-brand-50 p-3 rounded-xl"><strong class="text-ink-900">Věk:</strong> @Model.Age let</div>
     </div>
     
     <div class="mb-8">
-        <strong class="text-gray-800 block mb-2 text-lg">Popis povahy:</strong>
-        <p class="text-gray-700 bg-gray-100 p-5 rounded-lg border border-gray-200 leading-relaxed">@Model.Description</p>
+        <strong class="text-ink-900 block mb-2 text-lg">Popis povahy:</strong>
+        <p class="text-ink-700 bg-white p-5 rounded-xl border border-brand-100 leading-relaxed">@Model.Description</p>
     </div>
 
     <form asp-controller="Dog" asp-action="Adopt" asp-route-id="@Model.Id" method="post">
-        <button type="submit" class="w-full bg-red-700 hover:bg-red-800 text-white text-2xl font-bold py-5 rounded-lg shadow-md transition uppercase tracking-wider">
-            🏠 Adoptovat
+        <button type="submit" class="w-full bg-accent-500 hover:bg-accent-600 text-white text-xl font-bold py-4 rounded-xl shadow-soft transition uppercase tracking-wide">
+            Adoptovat
         </button>
     </form>
 </div>

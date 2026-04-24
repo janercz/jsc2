@@ -16,7 +16,7 @@ namespace UtulkyApp.Controllers
         public async Task<IActionResult> Detail(int id)
         {
             var shelter = await _db.Shelters
-                .Include(s => s.Dogs) // Připojíme psy k útulku
+                .Include(s => s.Dogs)
                 .FirstOrDefaultAsync(s => s.Id == id);
 
             if (shelter == null) return NotFound();

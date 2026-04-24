@@ -18,5 +18,15 @@ namespace UtulkyApp.Controllers
             var shelters = await _db.Shelters.ToListAsync();
             return View(shelters);
         }
+
+        public IActionResult Informace()
+        {
+            return View("Privacy");
+        }
+
+        public IActionResult Privacy()
+        {
+            return View();
+        }
     }
 }

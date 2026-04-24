@@ -13,7 +13,7 @@ namespace UtulkyApp.Controllers
             _db = db;
         }
 
-        // GET: Detail psa
+        // Detail
         public async Task<IActionResult> Detail(int id)
         {
             var dog = await _db.Dogs.Include(d => d.Shelter).FirstOrDefaultAsync(d => d.Id == id);
@@ -21,7 +21,7 @@ namespace UtulkyApp.Controllers
             return View(dog);
         }
 
-        // GET: Formulář pro přidání psa
+        // Přidání
         [HttpGet]
         public IActionResult Create(int shelterId)
         {
@@ -29,7 +29,7 @@ namespace UtulkyApp.Controllers
             return View();
         }
 
-        // POST: Uložení psa
+        // Uložení
         [HttpPost]
         public async Task<IActionResult> Create(Dog dog)
         {
@@ -43,7 +43,7 @@ namespace UtulkyApp.Controllers
             return View(dog);
         }
 
-        // POST: Adopce (smazání)
+        // Smazání
         [HttpPost]
         public async Task<IActionResult> Adopt(int id)
         {
@@ -58,7 +58,7 @@ namespace UtulkyApp.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        // GET: Vyhledávání
+        // Vyhledávání
         public async Task<IActionResult> Search(string query)
         {
             if (string.IsNullOrWhiteSpace(query))
@@ -67,7 +67,7 @@ namespace UtulkyApp.Controllers
             }
 
             var dogs = await _db.Dogs
-                .Include(d => d.Shelter) // Bonus: aby šlo prokliknout do útulku
+                .Include(d => d.Shelter)
                 .Where(d => d.Name.ToLower().Contains(query.ToLower()))
                 .ToListAsync();
 

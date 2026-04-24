@@ -1,31 +1,153 @@
-html {
-  font-size: 14px;
+:root {
+  --brand-50: #f5fbf9;
+  --brand-100: #d9efe7;
+  --brand-500: #1f8f72;
+  --brand-700: #125a48;
+  --ink-700: #2f3b47;
+  --ink-900: #16212b;
+  --surface: #ffffff;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
+html,
+body {
   min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+  margin: 0;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--ink-900);
 }
 
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
+.app-body {
+  position: relative;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(31, 143, 114, 0.13), transparent 42%),
+    radial-gradient(circle at 12% 28%, rgba(193, 102, 63, 0.13), transparent 38%),
+    linear-gradient(180deg, #f8fbff 0%, #f3f8f6 100%);
+  overflow-x: hidden;
 }
 
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.brand-title {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 700;
+}
+
+.background-orb {
+  position: fixed;
+  border-radius: 9999px;
+  filter: blur(10px);
+  opacity: 0.45;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.background-orb-one {
+  width: 260px;
+  height: 260px;
+  top: 8%;
+  right: -90px;
+  background: #e5f6f0;
+}
+
+.background-orb-two {
+  width: 220px;
+  height: 220px;
+  left: -70px;
+  bottom: 14%;
+  background: #f7e4dc;
+}
+
+.content-shell {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(217, 239, 231, 0.7);
+  border-radius: 24px;
+  box-shadow: 0 14px 30px rgba(22, 33, 43, 0.08);
+  padding: 1.5rem;
+  animation: rise-up 0.6s ease-out both;
+}
+
+.page-title {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  color: var(--ink-900);
+  line-height: 1.15;
+}
+
+.section-title {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.3rem, 2.7vw, 2rem);
+  color: var(--ink-900);
+}
+
+.nav-link {
+  color: var(--ink-700);
+  padding: 0.4rem 0.65rem;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--brand-700);
+  background: var(--brand-50);
+}
+
+.search-input {
+  width: min(300px, 100%);
+  border: 1px solid #beddd2;
+  border-radius: 12px;
+  padding: 0.6rem 0.85rem;
+  outline: none;
+  transition: all 0.2s ease;
+  color: var(--ink-900);
+}
+
+.search-input:focus {
+  border-color: #1f8f72;
+  box-shadow: 0 0 0 4px rgba(31, 143, 114, 0.15);
+}
+
+.btn-primary {
+  border: none;
+  border-radius: 12px;
+  padding: 0.62rem 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #1f8f72, #18725b);
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(31, 143, 114, 0.28);
+}
+
+.card-soft {
+  background: #ffffff;
+  border: 1px solid #e6efeb;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(22, 33, 43, 0.06);
+}
+
+@keyframes rise-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .content-shell {
+    border-radius: 18px;
+    padding: 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+  }
 }
